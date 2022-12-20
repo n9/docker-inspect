@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build docker image",
+            "type": "shell",
+            "command": "docker build --pull --rm --build-arg BASE_IMAGE_VERSION=7.3-debian-11 -f Dockerfile -t inspect:7.3-debian-11 .",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

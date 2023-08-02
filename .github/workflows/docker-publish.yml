@@ -5,6 +5,7 @@ on:
     - cron: '00 01 * * *'
   push:
     branches: [ "master" ]
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: n9org/inspect

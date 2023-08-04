@@ -6,7 +6,7 @@ FROM $BASE_IMAGE
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     bash git openssh-server rsync mc gpg lsof \
-    nano xxd \
+    nano xxd build-essential \
     dnsutils wget curl nmap iputils-ping netcat tcpdump \
     && curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs \
